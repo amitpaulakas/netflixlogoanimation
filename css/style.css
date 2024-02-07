@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.netfixlogo{
+    position: relative;
+    width: 360px;
+    height: 520px;
+    overflow: hidden;
+    transform:scale(0.8) ;
+    -webkit-transform:scale(0.8) ;
+    -moz-transform:scale(0.8) ;
+    -ms-transform:scale(0.8) ;
+    -o-transform:scale(0.8) ;
+}
+.netfixlogo::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -100PX;
+    height: 120px;
+    width: 100%;
+    background: #000;
+    z-index: 2;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: scaleX(1.5);
+    -webkit-transform: scaleX(1.5);
+    -moz-transform: scaleX(1.5);
+    -ms-transform: scaleX(1.5);
+    -o-transform: scaleX(1.5);
+}
+.netfixlogo::after,
+h5::after{
+    top: ;
+    right: 0;
+    position: absolute;
+    content: "";
+    width: 400%;
+    height: 100%;
+    background: linear-gradient( to right, transparent,#000,#000);
+    z-index: 3;
+    animation: amit 2s linear forwards;
+    -webkit-animation: amit 2s linear forwards;
+}
+@keyframes amit{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -400%;
+    }
+}
+
+.netfixlogo span{
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    background-color: #fff;
+}
+.netfixlogo span:nth-child(1){
+background: #a9030e;
+left: 0;
+}
+.netfixlogo span:nth-child(2){
+   background: #cc0513;
+   left: 0;
+   z-index: 1;
+   transform-origin: top left;
+   transform:skewX(24.7deg) ;
+   -webkit-transform:skewX(24.7deg) ;
+   -moz-transform:skewX(24.7deg) ;
+   -ms-transform:skewX(24.7deg) ;
+   -o-transform:skewX(24.7deg) ;
+   box-shadow:0 0 40px rgba(0, 0, 0, 1) ;
+}
+.netfixlogo span:nth-child(3){
+        background: #a9030e;
+        right: 0;
+}
+h5{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+   color: #fff;
+   z-index: 25000;
+   overflow: hidden;
+}
